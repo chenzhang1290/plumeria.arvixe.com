@@ -1,0 +1,110 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "_Master.cshtml";
+}
+
+<section class="slider">
+    <div class="slide">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="~/Images/slide1.png" />
+                    <div>
+                        <p>Please mark your calendars and join us for the TESL Canada 2014 conference in Regina May 8-10, 2014</p>
+                        <button class="red">Find out more</button>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="~/Images/slide2.png" />
+                    <div>
+                        <p>The TESL Canada Journal, established in 1984, is a refereed journal for practicing teachers, teacher educators, graduate students, and researchers.</p>
+                        <button class="red">Find out more</button>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="~/Images/slide3.png" />
+                    <div>
+                        <p>SHARE has articles with practical teaching ideas for the ESL classroom, classroom technology, reviews of ESL teaching and learning online and print resources and opportunities across Canada for professional development.</p>
+                        <button class="red">Find out more</button>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="~/Images/slide4.png" />
+                    <div>
+                        <p>This is TESL Canada’s charitable arm. The TCEF collects donation and fundraises to support travel grants, TESL Certificate Trainee Scholarships, and TESL Canada Certified Teachers’ complimentary registration awards.</p>
+                        <button class="red">Find out more</button>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <ol></ol>
+    <script type="text/javascript">
+        $(window).ready(function ()
+        {
+            TESL.Slider.Init(".slider");
+        });
+    </script>
+</section>
+
+<section class="teasers">
+    <div>
+        <a href="#">
+            <img src="~/Images/dummy.listitem.big.png" />
+            <h2>Become Certified</h2>
+            <p>Professional Certification for ESL Teachers</p>
+            <button>Get Certified</button>
+        </a>
+    </div>
+    <div>
+        <a href="#">
+            <img src="~/Images/dummy.listitem.big.png" />
+            <h2>Training</h2>
+            <p>Find A TESL Canada Recognized Teacher Training Program</p>
+            <button>Find out more</button>
+        </a>
+    </div>
+    <div>
+        <a href="#">
+            <img src="~/Images/dummy.listitem.big.png" />
+            <h2>Jobs</h2>
+            <p>Canadian and International Jobs for ESL teachers</p>
+            <button>View postings</button>
+        </a>
+    </div>
+</section>
+
+<section class="newslist">
+    <div>
+        <a href="#">
+            <img src="~/Images/dummy.listitem.small.png" />
+            <h3>Issue 4 of SHARE</h3>
+            <p><span class="blue">TESL Canada’s e-Magazine</span> is available</p>
+        </a>
+    </div>
+    <div>
+        <a href="#">
+            <img src="~/Images/dummy.listitem.small.png" />
+            <h3>Mark your calendars</h3>
+            <p><span class="blue">TESL Canada 2014 Conference</span><br/>Regina, May 8-10, 2014</p>
+        </a>
+    </div>
+    <div>
+        <a href="#">
+            <img src="~/Images/dummy.listitem.small.png" />
+            <h3>Video sessions</h3>
+            <p>Select presentations from <span class="blue">TESL Canada 2012 Conference</span> are available</p>
+        </a>
+    </div>
+</section>
+
+<section class="mapside">
+    <a href="#"><img src="~/Images/dummy.map.jpg" /></a>
+    <a href="#"><img src="~/Images/dummy.findtesl.jpg" /></a>
+</section>

@@ -1,0 +1,391 @@
+2013-07-02 14:53:03,490 [9] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-07-02 14:53:03,505 [9] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 8ms)
+2013-07-02 14:53:03,554 [9] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 14:53:03,677 [9] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 122ms)
+2013-07-02 14:53:03,677 [9] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 1] An unhandled exception occurred
+System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+   at System.Reflection.RuntimeAssembly.GetExportedTypes(RuntimeAssembly assembly, ObjectHandleOnStack retTypes)
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 563
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 501
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 545
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 698
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 668
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 123
+   at Umbraco.Web.WebBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 73
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\UmbracoApplicationBase.cs:line 39
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-07-02 14:53:13,693 [9] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 7] Application shutdown. Reason: InitializationError
+2013-07-02 15:45:45,530 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-07-02 15:45:45,546 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 9ms)
+2013-07-02 15:45:45,562 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 15:45:45,670 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 17 (took 104ms)
+2013-07-02 15:45:45,779 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2013-07-02 15:45:45,795 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+2013-07-02 15:45:45,795 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2013-07-02 15:45:45,795 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+2013-07-02 15:45:45,795 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2013-07-02 15:45:45,795 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 2 (took 0ms)
+2013-07-02 15:45:45,795 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2013-07-02 15:45:45,795 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2013-07-02 15:45:45,795 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2013-07-02 15:45:45,795 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2013-07-02 15:45:46,467 [5] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Initializing Examine and binding to business logic events
+2013-07-02 15:45:47,811 [5] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 1] Adding examine event handlers for index providers: 3
+2013-07-02 15:45:47,842 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplication
+2013-07-02 15:45:47,842 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 1ms)
+2013-07-02 15:45:48,489 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.ITree
+2013-07-02 15:45:48,498 [5] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 2ms)
+2013-07-02 16:22:08,118 [5] INFO  umbraco.BusinessLogic.Log - [Thread 42] Log scrubbed.  Removed all items older than 2013-05-03 16:22:07
+2013-07-02 16:22:08,145 [5] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 42] Application shutdown. Reason: ConfigurationChange
+2013-07-02 16:23:27,897 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Determining hash of code files on disk
+2013-07-02 16:23:27,935 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Hash determined (took 8ms)
+2013-07-02 16:23:27,935 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 16:23:28,067 [39] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 123ms)
+2013-07-02 16:23:28,083 [39] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 43] An unhandled exception occurred
+System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+   at System.Reflection.RuntimeAssembly.GetExportedTypes(RuntimeAssembly assembly, ObjectHandleOnStack retTypes)
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 563
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 501
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 545
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 698
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 668
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 123
+   at Umbraco.Web.WebBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 73
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\UmbracoApplicationBase.cs:line 39
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-07-02 16:23:38,103 [39] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 22] Application shutdown. Reason: InitializationError
+2013-07-02 16:23:40,979 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Determining hash of code files on disk
+2013-07-02 16:23:41,028 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Hash determined (took 22ms)
+2013-07-02 16:23:41,029 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 16:23:41,035 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 17 (took 4ms)
+2013-07-02 16:23:41,100 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2013-07-02 16:23:41,102 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+2013-07-02 16:23:41,102 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2013-07-02 16:23:41,102 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+2013-07-02 16:23:41,102 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2013-07-02 16:23:41,157 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 2 (took 55ms)
+2013-07-02 16:23:41,158 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2013-07-02 16:23:41,158 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2013-07-02 16:23:41,158 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2013-07-02 16:23:41,158 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2013-07-02 16:23:41,389 [42] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 43] Initializing Examine and binding to business logic events
+2013-07-02 16:23:41,578 [42] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 43] Adding examine event handlers for index providers: 3
+2013-07-02 16:23:41,583 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.IApplication
+2013-07-02 16:23:41,584 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 1ms)
+2013-07-02 16:23:41,656 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.ITree
+2013-07-02 16:23:41,659 [42] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 3ms)
+2013-07-02 16:23:42,005 [42] INFO  umbraco.content - [Thread 22] Loading content from disk cache...
+2013-07-02 16:23:51,481 [42] INFO  umbraco.BusinessLogic.Log - [Thread 40] Log scrubbed.  Removed all items older than 2013-05-03 16:23:51
+2013-07-02 16:23:51,484 [42] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 40] Application shutdown. Reason: BinDirChangeOrDirectoryRename
+2013-07-02 16:24:01,319 [38] INFO  Umbraco.Core.PluginManager - [Thread 36] Determining hash of code files on disk
+2013-07-02 16:24:01,351 [38] INFO  Umbraco.Core.PluginManager - [Thread 36] Hash determined (took 16ms)
+2013-07-02 16:24:01,371 [38] INFO  Umbraco.Core.PluginManager - [Thread 36] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 16:24:01,465 [38] INFO  Umbraco.Core.PluginManager - [Thread 36] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 90ms)
+2013-07-02 16:24:01,472 [38] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 36] An unhandled exception occurred
+System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+   at System.Reflection.RuntimeAssembly.GetExportedTypes(RuntimeAssembly assembly, ObjectHandleOnStack retTypes)
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 563
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 501
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 545
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 698
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 668
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 123
+   at Umbraco.Web.WebBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 73
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\UmbracoApplicationBase.cs:line 39
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-07-02 16:24:11,493 [38] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 40] Application shutdown. Reason: InitializationError
+2013-07-02 16:25:32,663 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Determining hash of code files on disk
+2013-07-02 16:25:32,679 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Hash determined (took 7ms)
+2013-07-02 16:25:32,694 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 16:25:32,726 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 17 (took 31ms)
+2013-07-02 16:25:32,793 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2013-07-02 16:25:32,794 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+2013-07-02 16:25:32,798 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2013-07-02 16:25:32,799 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+2013-07-02 16:25:32,799 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2013-07-02 16:25:32,800 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 2 (took 0ms)
+2013-07-02 16:25:32,802 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2013-07-02 16:25:32,803 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2013-07-02 16:25:32,803 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2013-07-02 16:25:32,803 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2013-07-02 16:25:33,112 [34] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 36] Initializing Examine and binding to business logic events
+2013-07-02 16:25:33,316 [34] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 36] Adding examine event handlers for index providers: 3
+2013-07-02 16:25:33,332 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Starting resolution types of umbraco.interfaces.IApplication
+2013-07-02 16:25:33,332 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 0ms)
+2013-07-02 16:25:33,405 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Starting resolution types of umbraco.interfaces.ITree
+2013-07-02 16:25:33,409 [34] INFO  Umbraco.Core.PluginManager - [Thread 36] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 2ms)
+2013-07-02 16:25:33,588 [34] INFO  umbraco.content - [Thread 22] Loading content from disk cache...
+2013-07-02 16:26:03,014 [34] INFO  Umbraco.Core.PluginManager - [Thread 39] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2013-07-02 16:26:03,014 [34] INFO  Umbraco.Core.PluginManager - [Thread 39] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 17 (took 0ms)
+2013-07-02 17:19:17,265 [34] INFO  umbraco.BusinessLogic.Log - [Thread 35] Log scrubbed.  Removed all items older than 2013-05-03 17:19:17
+2013-07-02 17:19:17,265 [34] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 35] Application shutdown. Reason: ConfigurationChange
+2013-07-02 17:20:33,221 [21] INFO  Umbraco.Core.PluginManager - [Thread 43] Determining hash of code files on disk
+2013-07-02 17:20:33,242 [21] INFO  Umbraco.Core.PluginManager - [Thread 43] Hash determined (took 9ms)
+2013-07-02 17:20:33,279 [21] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 17:20:33,397 [21] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 115ms)
+2013-07-02 17:20:33,399 [21] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 43] An unhandled exception occurred
+System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+   at System.Reflection.RuntimeAssembly.GetExportedTypes(RuntimeAssembly assembly, ObjectHandleOnStack retTypes)
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 563
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 501
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 545
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 698
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 668
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 123
+   at Umbraco.Web.WebBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 73
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\UmbracoApplicationBase.cs:line 39
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-07-02 17:20:43,421 [21] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 39] Application shutdown. Reason: InitializationError
+2013-07-02 17:20:57,798 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Determining hash of code files on disk
+2013-07-02 17:20:57,813 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Hash determined (took 10ms)
+2013-07-02 17:20:57,829 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 17:20:57,860 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 17 (took 25ms)
+2013-07-02 17:20:57,921 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2013-07-02 17:20:57,923 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+2013-07-02 17:20:57,925 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2013-07-02 17:20:57,925 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+2013-07-02 17:20:57,927 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2013-07-02 17:20:57,927 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 2 (took 0ms)
+2013-07-02 17:20:57,929 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2013-07-02 17:20:57,929 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2013-07-02 17:20:57,930 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2013-07-02 17:20:57,930 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2013-07-02 17:20:58,223 [19] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 43] Initializing Examine and binding to business logic events
+2013-07-02 17:20:58,461 [19] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 43] Adding examine event handlers for index providers: 3
+2013-07-02 17:20:58,481 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.IApplication
+2013-07-02 17:20:58,489 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 7ms)
+2013-07-02 17:20:58,555 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.ITree
+2013-07-02 17:20:58,558 [19] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 2ms)
+2013-07-02 17:20:58,758 [19] INFO  umbraco.content - [Thread 39] Loading content from disk cache...
+2013-07-02 17:21:28,094 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2013-07-02 17:21:28,094 [19] INFO  Umbraco.Core.PluginManager - [Thread 22] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 17 (took 1ms)
+2013-07-02 19:01:25,035 [19] INFO  umbraco.BasePages.BasePage - [Thread 126] User admin (Id: 0) logged in
+2013-07-02 19:01:25,240 [19] INFO  Umbraco.Core.PluginManager - [Thread 126] Starting resolution types of umbraco.BusinessLogic.Actions.IActionHandler
+2013-07-02 19:01:25,240 [19] INFO  Umbraco.Core.PluginManager - [Thread 126] Completed resolution of types of umbraco.BusinessLogic.Actions.IActionHandler, found 1 (took 1ms)
+2013-07-02 19:01:25,508 [19] INFO  Umbraco.Core.PluginManager - [Thread 126] Starting resolution types of umbraco.interfaces.ITree
+2013-07-02 19:01:25,523 [19] INFO  Umbraco.Core.PluginManager - [Thread 126] Completed resolution of types of umbraco.interfaces.ITree, found 36 (took 1ms)
+2013-07-02 19:01:57,720 [19] INFO  Umbraco.Core.PluginManager - [Thread 121] Starting resolution types of umbraco.interfaces.ICacheRefresher
+2013-07-02 19:01:57,720 [19] INFO  Umbraco.Core.PluginManager - [Thread 121] Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 21 (took 1ms)
+2013-07-02 19:04:57,823 [19] INFO  Umbraco.Core.PluginManager - [Thread 122] Starting resolution types of umbraco.interfaces.IDataType
+2013-07-02 19:04:57,840 [19] INFO  Umbraco.Core.PluginManager - [Thread 122] Completed resolution of types of umbraco.interfaces.IDataType, found 36 (took 16ms)
+2013-07-02 19:04:58,192 [19] INFO  umbraco.cms.businesslogic.web.Document - [Thread 122] New document 1055
+2013-07-02 19:05:02,983 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 119] Content 'Programs' with Id '1055' has been published.
+2013-07-02 19:05:17,219 [19] INFO  umbraco.cms.businesslogic.web.Document - [Thread 125] New document 1056
+2013-07-02 19:05:20,808 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 123] Content 'Form' with Id '1056' has been published.
+2013-07-02 19:05:31,095 [19] INFO  umbraco.cms.businesslogic.web.Document - [Thread 123] New document 1057
+2013-07-02 19:05:33,874 [19] INFO  Umbraco.Core.Publishing.PublishingStrategy - [Thread 123] Content 'Text Page' with Id '1057' has been published.
+2013-07-02 19:06:04,608 [19] INFO  umbraco.BusinessLogic.Log - [Thread 119] Log scrubbed.  Removed all items older than 2013-05-03 19:06:04
+2013-07-02 19:06:04,608 [19] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 119] Application shutdown. Reason: ConfigurationChange
+2013-07-02 19:06:07,259 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-07-02 19:06:07,289 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 13ms)
+2013-07-02 19:06:07,334 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 19:06:07,564 [118] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 230ms)
+2013-07-02 19:06:07,579 [118] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 1] An unhandled exception occurred
+System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+   at System.Reflection.RuntimeAssembly.GetExportedTypes(RuntimeAssembly assembly, ObjectHandleOnStack retTypes)
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 563
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 501
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 545
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 698
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 668
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 123
+   at Umbraco.Web.WebBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 73
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\UmbracoApplicationBase.cs:line 39
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-07-02 19:06:17,603 [118] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 126] Application shutdown. Reason: InitializationError
+2013-07-02 19:06:54,984 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Determining hash of code files on disk
+2013-07-02 19:06:55,022 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Hash determined (took 9ms)
+2013-07-02 19:06:55,035 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 19:06:55,072 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 17 (took 35ms)
+2013-07-02 19:06:55,104 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2013-07-02 19:06:55,104 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+2013-07-02 19:06:55,104 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2013-07-02 19:06:55,105 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+2013-07-02 19:06:55,105 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2013-07-02 19:06:55,106 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 2 (took 0ms)
+2013-07-02 19:06:55,106 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2013-07-02 19:06:55,107 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2013-07-02 19:06:55,107 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2013-07-02 19:06:55,107 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2013-07-02 19:06:55,311 [117] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 43] Initializing Examine and binding to business logic events
+2013-07-02 19:06:55,469 [117] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 43] Adding examine event handlers for index providers: 3
+2013-07-02 19:06:55,487 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.IApplication
+2013-07-02 19:06:55,488 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 1ms)
+2013-07-02 19:06:55,546 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Starting resolution types of umbraco.interfaces.ITree
+2013-07-02 19:06:55,548 [117] INFO  Umbraco.Core.PluginManager - [Thread 43] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 2ms)
+2013-07-02 19:06:55,682 [117] INFO  umbraco.content - [Thread 122] Loading content from disk cache...
+2013-07-02 19:07:25,260 [117] INFO  Umbraco.Core.PluginManager - [Thread 125] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2013-07-02 19:07:25,262 [117] INFO  Umbraco.Core.PluginManager - [Thread 125] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 17 (took 1ms)
+2013-07-02 19:48:09,937 [117] INFO  umbraco.BusinessLogic.Log - [Thread 121] Log scrubbed.  Removed all items older than 2013-05-03 19:48:09
+2013-07-02 19:48:09,939 [117] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 121] Application shutdown. Reason: ConfigurationChange
+2013-07-02 19:48:28,095 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-07-02 19:48:28,142 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 33ms)
+2013-07-02 19:48:28,173 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 19:48:28,308 [98] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 135ms)
+2013-07-02 19:48:28,311 [98] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 1] An unhandled exception occurred
+System.IO.FileLoadException: Could not load file or assembly 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+File name: 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+   at System.Reflection.RuntimeAssembly.GetExportedTypes(RuntimeAssembly assembly, ObjectHandleOnStack retTypes)
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 563
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 501
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 545
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 698
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 668
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 123
+   at Umbraco.Web.WebBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 73
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\UmbracoApplicationBase.cs:line 39
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-07-02 19:48:36,000 [98] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 121] Application shutdown. Reason: BinDirChangeOrDirectoryRename
+2013-07-02 19:48:43,824 [96] INFO  Umbraco.Core.PluginManager - [Thread 1] Determining hash of code files on disk
+2013-07-02 19:48:43,854 [96] INFO  Umbraco.Core.PluginManager - [Thread 1] Hash determined (took 17ms)
+2013-07-02 19:48:43,897 [96] INFO  Umbraco.Core.PluginManager - [Thread 1] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 19:48:44,038 [96] INFO  Umbraco.Core.PluginManager - [Thread 1] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 137ms)
+2013-07-02 19:48:44,040 [96] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 1] An unhandled exception occurred
+System.IO.FileNotFoundException: Could not load file or assembly 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The system cannot find the file specified.
+File name: 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+   at System.Reflection.RuntimeAssembly.GetExportedTypes(RuntimeAssembly assembly, ObjectHandleOnStack retTypes)
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 563
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 501
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 545
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 698
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 668
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 123
+   at Umbraco.Web.WebBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 73
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\UmbracoApplicationBase.cs:line 39
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-07-02 19:48:54,059 [96] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 24] Application shutdown. Reason: InitializationError
+2013-07-02 19:48:54,729 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Determining hash of code files on disk
+2013-07-02 19:48:54,762 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Hash determined (took 8ms)
+2013-07-02 19:48:54,772 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 19:48:54,812 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 17 (took 36ms)
+2013-07-02 19:48:54,867 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2013-07-02 19:48:54,868 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+2013-07-02 19:48:54,871 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2013-07-02 19:48:54,872 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+2013-07-02 19:48:54,872 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2013-07-02 19:48:54,872 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 2 (took 0ms)
+2013-07-02 19:48:54,889 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2013-07-02 19:48:54,890 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2013-07-02 19:48:54,891 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2013-07-02 19:48:54,893 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2013-07-02 19:48:55,178 [94] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 95] Initializing Examine and binding to business logic events
+2013-07-02 19:48:55,407 [94] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 95] Adding examine event handlers for index providers: 3
+2013-07-02 19:48:55,442 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of umbraco.interfaces.IApplication
+2013-07-02 19:48:55,445 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 2ms)
+2013-07-02 19:48:55,535 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of umbraco.interfaces.ITree
+2013-07-02 19:48:55,540 [94] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 4ms)
+2013-07-02 19:48:55,782 [94] INFO  umbraco.content - [Thread 125] Loading content from disk cache...
+2013-07-02 19:49:25,054 [94] INFO  Umbraco.Core.PluginManager - [Thread 125] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2013-07-02 19:49:25,055 [94] INFO  Umbraco.Core.PluginManager - [Thread 125] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 17 (took 0ms)
+2013-07-02 19:50:50,473 [94] INFO  umbraco.BusinessLogic.Log - [Thread 119] Log scrubbed.  Removed all items older than 2013-05-03 19:50:50
+2013-07-02 19:50:50,475 [94] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 119] Application shutdown. Reason: ConfigurationChange
+2013-07-02 19:50:53,342 [108] INFO  Umbraco.Core.PluginManager - [Thread 95] Determining hash of code files on disk
+2013-07-02 19:50:53,362 [108] INFO  Umbraco.Core.PluginManager - [Thread 95] Hash determined (took 9ms)
+2013-07-02 19:50:53,430 [108] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 19:50:53,523 [108] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 90ms)
+2013-07-02 19:50:53,525 [108] ERROR Umbraco.Core.UmbracoApplicationBase - [Thread 95] An unhandled exception occurred
+System.IO.FileNotFoundException: Could not load file or assembly 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d' or one of its dependencies. The system cannot find the file specified.
+File name: 'MySql.Data, Version=6.6.4.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d'
+   at System.Reflection.RuntimeAssembly.GetExportedTypes(RuntimeAssembly assembly, ObjectHandleOnStack retTypes)
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Umbraco.Core.TypeFinder.GetTypesWithFormattedException(Assembly a) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 563
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 501
+   at Umbraco.Core.TypeFinder.GetClasses(Type assignTypeFrom, IEnumerable`1 assemblies, Boolean onlyConcreteClasses, Func`2 additionalFilter) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\TypeFinder.cs:line 545
+   at Umbraco.Core.PluginManager.LoadViaScanningAndUpdateCacheFile[T](TypeList typeList, TypeResolutionKind resolutionKind, Func`1 finder) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 698
+   at Umbraco.Core.PluginManager.ResolveTypes[T](Func`1 finder, TypeResolutionKind resolutionType, Boolean cacheResult) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\PluginManager.cs:line 668
+   at Umbraco.Core.CoreBootManager.InitializeApplicationEventsResolver() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 123
+   at Umbraco.Web.WebBootManager.InitializeApplicationEventsResolver()
+   at Umbraco.Core.CoreBootManager.Initialize() in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\CoreBootManager.cs:line 73
+   at Umbraco.Web.WebBootManager.Initialize()
+   at Umbraco.Core.UmbracoApplicationBase.StartApplication(Object sender, EventArgs e) in d:\Dropbox\Dev\UmbracoSource\src\Umbraco.Core\UmbracoApplicationBase.cs:line 39
+
+WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2013-07-02 19:51:03,546 [108] INFO  Umbraco.Core.UmbracoApplicationBase - [Thread 24] Application shutdown. Reason: InitializationError
+2013-07-02 19:51:07,374 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Determining hash of code files on disk
+2013-07-02 19:51:07,398 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Hash determined (took 11ms)
+2013-07-02 19:51:07,411 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+2013-07-02 19:51:07,449 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 17 (took 35ms)
+2013-07-02 19:51:07,517 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+2013-07-02 19:51:07,518 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 1ms)
+2013-07-02 19:51:07,522 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+2013-07-02 19:51:07,522 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+2013-07-02 19:51:07,522 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+2013-07-02 19:51:07,523 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 2 (took 0ms)
+2013-07-02 19:51:07,525 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+2013-07-02 19:51:07,525 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 3 (took 0ms)
+2013-07-02 19:51:07,527 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+2013-07-02 19:51:07,527 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 1 (took 0ms)
+2013-07-02 19:51:07,812 [101] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 95] Initializing Examine and binding to business logic events
+2013-07-02 19:51:08,020 [101] INFO  Umbraco.Web.Search.ExamineEvents - [Thread 95] Adding examine event handlers for index providers: 3
+2013-07-02 19:51:08,052 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of umbraco.interfaces.IApplication
+2013-07-02 19:51:08,052 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of umbraco.interfaces.IApplication, found 7 (took 1ms)
+2013-07-02 19:51:08,111 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Starting resolution types of umbraco.interfaces.ITree
+2013-07-02 19:51:08,113 [101] INFO  Umbraco.Core.PluginManager - [Thread 95] Completed resolution of types of umbraco.interfaces.ITree, found 27 (took 2ms)
+2013-07-02 19:51:08,304 [101] INFO  umbraco.content - [Thread 119] Loading content from disk cache...
+2013-07-02 19:51:37,716 [101] INFO  Umbraco.Core.PluginManager - [Thread 24] Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+2013-07-02 19:51:37,718 [101] INFO  Umbraco.Core.PluginManager - [Thread 24] Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 17 (took 1ms)

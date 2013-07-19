@@ -1,0 +1,115 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "_Master.cshtml";
+}
+
+<div class="breadcrumb">
+    <a  href="#">Home</a> > <a  href="#">Become Certified</a> > <a  href="#">Canada Recognized Teacher Training Programs</a> > <b>Teacher Training Directory</b>
+</div>
+
+<section class="programlist">
+    <div>
+        <img src="~/Images/bubble.computer.png" />
+        <p>Distance Education or On Line Programs.</p>
+    </div>
+    <div>
+        <img src="~/Images/bubble.hat.png" />
+        <p>Programs that have received Interim Recognition. Students who graduatefrom an interim recognized program will be able to apply for TESL Canada certification once the program has received full recognition.</p>
+    </div>
+    <div>
+        <img src="~/Images/bubble.greenhat.png" />
+        <p>Programs is currently reapplying for recognition. Students who graduate from a program during reapplication period will still be able to apply for TESL Canada certification.</p>
+    </div>
+    
+    <section class="noticebox">
+        <p>The expired list has moved to the new page. For a list of previously recognized programs <a href="#">click here.</a></p>
+    </section>
+</section>
+
+<section class="mapside program">
+    <a href="#"><img src="~/Images/dummy.map.jpg" /></a>
+</section>
+
+<section class="programs">
+    <div class="filter">
+        <select>
+            <option>All Provinces</option>
+        </select>
+        <select>
+            <option>Distance / Online</option>
+        </select>
+    </div>
+
+    <table class="programs">
+        <thead>
+            <th class="type">&nbsp;</th>
+            <th class="province"><span>Province</span></th>
+            <th class="program"><span>Program</span></th>
+            <th class="dates"><span>Effective Dates</span></th>
+            <th class="website"><span>Website</span></th>
+            <th class="notes"><span>Notes</span></th>
+        </thead>
+        <tr>
+            <td><span class="icon icon-hat"></span></td>
+            <td>AB</td>
+            <td><a href="#">This is a program title</a></td>
+            <td>06/21/2013 - 12/21/2013</td>
+            <td><a href="#">www.google.com</a></td>
+            <td><span class="icon icon-note" data-text="Note text goes here. Lorem Bacon Ipsum and some more tekst..."></span></td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-hat"></span></td>
+            <td>BC</td>
+            <td><a href="#">This is a longer program title</a></td>
+            <td>06/21/2013 - 12/21/2013</td>
+            <td><a href="#">www.google.com</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-computer"></span></td>
+            <td>AB</td>
+            <td><a href="#">This is a longer program title</a></td>
+            <td>06/21/2013 - 12/21/2013</td>
+            <td><a href="#">www.google.com</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-greenhat"></span></td>
+            <td>AB</td>
+            <td><a href="#">This is a longer program title</a></td>
+            <td>06/21/2013 - 12/21/2013</td>
+            <td><a href="#">www.google.com</a></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-hat"></span></td>
+            <td>MB</td>
+            <td><a href="#">This is a longer program title</a></td>
+            <td>06/21/2013 - 12/21/2013</td>
+            <td><a href="#">www.google.com</a></td>
+            <td><span class="icon icon-note" data-text="Note text 2 goes here. Lorem Bacon Ipsum and some more tekst. Lorem Bacon Ipsum and some more tekst..."></span></td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-greenhat"></span></td>
+            <td>ON</td>
+            <td><a href="#">This is a longer program title</a></td>
+            <td>06/21/2013 - 12/21/2013</td>
+            <td><a href="#">www.google.com</a></td>
+            <td><span class="icon icon-note" data-text="Note text 3 goes here. Lorem Bacon Ipsum and some more tekst..."></span></td>
+        </tr>
+        <tr>
+            <td><span class="icon icon-computer"></span></td>
+            <td>ON</td>
+            <td><a href="#">This is a longer program title</a></td>
+            <td>06/21/2013 - 12/21/2013</td>
+            <td><a href="#">www.google.com</a></td>
+            <td></td>
+        </tr>
+    </table>
+    <script type="text/javascript">
+        $(window).ready(function ()
+        {
+            TESL.ProgramTable("table.programs");
+        });
+    </script>
+</section>
